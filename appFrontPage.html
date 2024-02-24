@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #7ed56f, #28b485); /* Gradient background from light green to dark green */
+            color: #ffffff; /* White text */
+            text-align: center;
+        }
+        .containerPage {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffffff; /* White text */
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        .button {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+            width: 0;
+            height: 0;
+            padding: 10px 20px;
+            border-style: solid;
+            border-width: 0 25px 43.3px 25px;
+            border-color: transparent transparent #ff6f61 transparent; /* Salmon triangle color */
+            background-color: transparent;
+            color: #ffffff; /* White text */
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+        }
+        button:hover {
+          opacity: 0.8;
+          background-color: #ff4d3f;
+        }
+        </style>
+    </head>
+<body>
+
+<h2>Modal Login Form</h2>
+    <div class="containerPage">
+        <h1>Welcome to Our Fashion App</h1>
+        <button class="button" onclick="location.href='User_Profile.html'" style="width:30%;">Sign Up</button>
+        <button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:30%;">Sign in</button>
+        <button class="button" onclick="location.href='Guest_Profile.html'" style="width:30%;">Guest</button>
+    </div>
+
+</body>
+</html>
