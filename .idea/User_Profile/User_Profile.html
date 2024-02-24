@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Database - Clothes App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #7ed56f, #28b485);
+            max-width: auto;
+        
+        select, input[type="text"], input[type="email"], input[type="tel"], input[type="checkbox"] {
+            width: 100%;
+            padding: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Database - Clothes App</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+            <label for="bodyType">Select Body Type:</label>
+            <select id="bodyType">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="disability">Do you have a disability or injury?</label>
+            <input type="checkbox" id="disability">
+        </div>
+        <button onclick="submitData()">Submit</button>
+    </div>
+
+    <script>
+        function submitData() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const bodyType = document.getElementById('bodyType').value;
+            const hasDisability = document.getElementById('disability').checked;
+
+            // Here you can send the data to your server or perform any other action with the selected values
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Phone Number:', phone);
+            console.log('Body Type:', bodyType);
+            console.log('Has Disability:', hasDisability);
+            alert('Data submitted successfully!');
+        }
+    </script>
+</body>
+</html>
