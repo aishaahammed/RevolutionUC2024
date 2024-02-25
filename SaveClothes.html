@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save Clothes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #7ed56f, #28b485);
+      color: #ffffff;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: black;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .clothes-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .clothes-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .clothes-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .favorite-button {
+      background-color: #ff6f61;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .favorite-button:hover {
+      background-color: #ff4d3f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Save Clothes</h1>
+    <div class="clothes-container">
+      <!-- Sample clothes items -->
+      <div class="clothes-item">
+        <img src="clothes1.jpg" alt="Clothes 1">
+        <h3>Clothes 1</h3>
+        <button class="buy-button">Buy</button>
+      </div>
+      <div class="clothes-item">
+        <img src="clothes2.jpg" alt="Clothes 2">
+        <h3>Clothes 2</h3>
+        <button class="buy-button">Buy</button>
+      </div>
+      <!-- Add more clothes items as needed -->
+    </div>
+  </div>
+</body>
+</html>
