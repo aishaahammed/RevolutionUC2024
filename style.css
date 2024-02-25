@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('waste_is_out_of_fashion_shutterstock.jpg');
+    background-color: black;
     color: #ffffff; /* White text */
     text-align: center;
     display: flex;
@@ -123,7 +123,7 @@ select, input[type="text"], input[type="email"], input[type="tel"], input[type="
 button:hover {
     background-color: black;
 }
-body {
+/*body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -133,7 +133,7 @@ body {
     min-height: 100vh;
     background-image: url('waste_is_out_of_fashion_shutterstock.jpg');
   }
-
+*/
   .login-container {
     color: white;
     background-color: #fff;
@@ -377,12 +377,18 @@ body {
     top: 51px;
     background-image: url(banner.jpg);
     background-size: cover;
+    object-fit: cover;
+    background-position: 50% 50%;
   }
   .content-area{
-    width:100%;
+    width:100vw;
     position: relative;
     top:450px;
     background: add;
     height: 400px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: auto;
   }
-  
+
