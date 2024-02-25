@@ -107,23 +107,21 @@
 <body>
   <div class="login-container" id="login-container">
     <h2>Best Dressed</h2>
-    <form id="login-form">
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit">Login</button>
-    </form>
-    <div class="social-buttons">
-      <button class="social-button facebook-button" onclick="loginWithFacebook()">Login with Facebook</button>
-      <button class="social-button google-button" onclick="loginWithGoogle()">Login with Google</button>
-      <button class="social-button X-button" onclick="loginWithX()">Login with X</button>
+    <button onclick="continueAsGuest()">Continue as Guest</button>
+    <div id="signin-form">
+      <form id="login-form">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p id="error-message" class="error-message"></p>
     </div>
-    <p id="error-message" class="error-message"></p>
     <div class="toggle-form">
       Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a>
     </div>
@@ -160,6 +158,12 @@
         loginContainer.style.display = 'none';
         signupContainer.style.display = 'block';
       }
+    }
+
+    function continueAsGuest() {
+      // Implement logic for continuing as a guest here
+      console.log('Continuing as Guest...');
+      window.location.href = 'guest_home.html'; // Redirect to guest home page
     }
 
     function loginWithFacebook() {
