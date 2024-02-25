@@ -375,7 +375,7 @@ button:hover {
     height: 500px;
     position:absolute;
     top: 51px;
-    background-image: url(banner.jpg);
+    background-image: url('banner.jpg');
     background-size: cover;
     object-fit: cover;
     background-position: 50% 50%;
