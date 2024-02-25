@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('waste_is_out_of_fashion_shutterstock.jpg');
+    color: #ffffff; /* White text */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.containerPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text */
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.button {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: 20;
+    height: 20;
+    padding: 20px 20px;
+    border-style: solid;
+    border-width:2px 2px;
+    border-color: white; 
+    background-color: rgb(0 0 0 / 5%);
+    color: white; /* White text */
+    font-size: 1.2rem;
+    cursor: pointer;
+    backdrop-filter: blur(20px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh; /* Full viewport height */
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 40%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text */
+    text-shadow: 4px 4px 4px black;
+}
+p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: rgb(101); /* White text */
+    text-shadow: 2px 2px 2px black;
+}
+.cta-button {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: 20;
+    height: 20;
+    padding: 10px 20px;
+    border-style: solid;
+    border-width:2px 2px;
+    border-color: white; 
+    background-color: rgb(0 0 0 / 5%);
+    color: white; /* White text */
+    font-size: 1.2rem;
+    cursor: pointer;
+    backdrop-filter: blur(20px);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+select, input[type="text"], input[type="email"], input[type="tel"], input[type="checkbox"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-top: 5px;
+}
+/*button {
+    width: 100%;
+    padding: 20px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}*/
+button:hover {
+    background-color: black;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('waste_is_out_of_fashion_shutterstock.jpg');
+  }
+
+  .login-container {
+    color: white;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 40%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px; /* Added to create space between containers */
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+/*button {
+    width: 100%;
+    padding: 20px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }*/
+  button:hover {
+    background-color: black;
+  }
+
+  .error-message {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .toggle-form {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .toggle-form a {
+    color: black;
+    cursor: pointer;
+  }
+
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .social-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin: 0 5px;
+  }
+  .facebook-button {
+    background-color: black;
+    color: #fff;
+  }
+  .google-button {
+    background-color: black;
+    color: #fff;
+  }
+  .X-button {
+    background-color: black;
+    color: #fff;
+  }
+
+  /* Added styles */
+  .guest-button-container {
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+  }
+/* Profile Button */
+.profile-btn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px; /* Added margin to separate from dropdown */
+  }
+  
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    background-color: black;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-image: black;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: black;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+    color: white;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .clothes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .clothes-item {
+    background-color: rgba(0, 0, 0, 40%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .clothes-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .clothes-details {
+    margin-bottom: 10px;
+  }
+  .favorite-button {
+    background-color: #ff6f61;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .favorite-button:hover {
+    background-color: #ff4d3f;
+  }
