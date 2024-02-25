@@ -68,5 +68,30 @@ app.get('/tryClothesPage.html', (req, res) => {
   res.sendFile(path.join(__dirname, '/tryClothesPage.html'));
 })
 
+//How to possibly fix issue of too many page renders
+/*
+const cache = {};
 
+// GET method route
+app.get('/tryClothesPage.html', (req, res) => {
+  const pagePath = '/tryClothesPage.html';
+
+  // Check if the page content is cached in memory
+  if (cache[pagePath]) {
+    // Serve cached content
+    res.send(cache[pagePath]);
+  } else {
+    // Render the page
+    res.sendFile(path.join(__dirname, pagePath), (err, data) => {
+      if (!err) {
+        // Cache the rendered content
+        cache[pagePath] = data;
+      }
+      // Send the response
+      res.send(data);
+    });
+  }
+});
+
+*/
 
