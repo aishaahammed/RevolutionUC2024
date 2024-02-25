@@ -21,7 +21,8 @@
       padding: 20px;
       border-radius: 8px;
       background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
 
     h2 {
@@ -75,6 +76,32 @@
       color: #007bff;
       cursor: pointer;
     }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .social-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      margin: 0 5px;
+    }
+    .facebook-button {
+      background-color: #3b5998;
+      color: #fff;
+    }
+    .google-button {
+      background-color: #db4437;
+      color: #fff;
+    }
+    .X-button {
+      background-color: black;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -91,6 +118,11 @@
       </div>
       <button type="submit">Login</button>
     </form>
+    <div class="social-buttons">
+      <button class="social-button facebook-button" onclick="loginWithFacebook()">Login with Facebook</button>
+      <button class="social-button google-button" onclick="loginWithGoogle()">Login with Google</button>
+      <button class="social-button X-button" onclick="loginWithX()">Login with X</button>
+    </div>
     <p id="error-message" class="error-message"></p>
     <div class="toggle-form">
       Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a>
@@ -128,6 +160,21 @@
         loginContainer.style.display = 'none';
         signupContainer.style.display = 'block';
       }
+    }
+
+    function loginWithFacebook() {
+      // Implement Facebook login logic here
+      console.log('Logging in with Facebook...');
+    }
+
+    function loginWithGoogle() {
+      // Implement Google login logic here
+      console.log('Logging in with Google...');
+    }
+
+    function loginWithTwitter() {
+      // Implement Twitter login logic here
+      console.log('Logging in with X...');
     }
 
     document.getElementById('login-form').addEventListener('submit', function(event) {
