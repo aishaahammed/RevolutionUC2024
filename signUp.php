@@ -48,7 +48,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty(trim($_POST["password"]))){
         $password_err = "Please enter a password.";
     } elseif(strlen(trim($_POST["password"])) < 6){
-        $password_err = "Password must have at least 6 characters.";
+        $password_err = "Password must have atleast 6 characters.";
     } else{
         $password = trim($_POST["password"]);
     }
@@ -92,7 +92,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Close connection
     mysqli_close($link);
-    die("Dead");
 }
 ?>
 
@@ -202,7 +201,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
   </style>
 </head>
-<body onload="redirect()">
+<body>
 <div class="login-container" id="login-container">
     <h2>Best Dressed</h2>
     <button onclick="continueAsGuest()">Continue as Guest</button>
@@ -220,7 +219,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
           <span class="invalid-feedback"><?php echo $password_err; ?></span>
         </div>
-        <button type="submit">Create Account</button>
+        <a href="tryClothesPage.php" type="submit" value="Login">Login</a>
       </form>
       <p id="error-message" class="error-message"></p>
     </div>

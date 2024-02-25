@@ -16,12 +16,12 @@ server = app.listen(port, function () {
 });
 
 app.engine('php', phpExpress.engine);
-app.set('views', '/home/mason/projects/RevolutionUC2024/');
+app.set('views', __dirname);
 
 app.all(/.+\.php$/, phpExpress.router);
 
 //Static files
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname + '../public')));
 //Socket setup
 var io = socket(server);
 
@@ -44,14 +44,16 @@ app.get('/entryPage.html', (req, res) => {
 })
 
 // GET method route
-app.get('/login.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '/login.html'));
+app.get('/login.php', (req, res) => {
+  res.sendFile(path.join(__dirname, '/login.php'));
 })
 
 // GET method route
+
 app.get('/signUp.php', (req, res) => {
   res.sendFile(path.join(__dirname, '/signUp.php'));
 })
+
 
 // GET method route
 app.get('/GuestPage.html', (req, res) => {
@@ -64,34 +66,9 @@ app.get('/User_Profile.html', (req, res) => {
 })
 
 // GET method route
-app.get('/tryClothesPage.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '/tryClothesPage.html'));
+app.get('/tryClothesPage.php', (req, res) => {
+  res.sendFile(path.join(__dirname, '/tryClothesPage.php'));
 })
 
-//How to possibly fix issue of too many page renders
-/*
-const cache = {};
 
-// GET method route
-app.get('/tryClothesPage.html', (req, res) => {
-  const pagePath = '/tryClothesPage.html';
-
-  // Check if the page content is cached in memory
-  if (cache[pagePath]) {
-    // Serve cached content
-    res.send(cache[pagePath]);
-  } else {
-    // Render the page
-    res.sendFile(path.join(__dirname, pagePath), (err, data) => {
-      if (!err) {
-        // Cache the rendered content
-        cache[pagePath] = data;
-      }
-      // Send the response
-      res.send(data);
-    });
-  }
-});
-
-*/
 
