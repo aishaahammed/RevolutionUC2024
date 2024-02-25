@@ -1,10 +1,14 @@
 <?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'nix4*4KcYK*8qqP');
-define('DB_NAME', 'RevolutionUC');
+$servername = "localhost";
+$database = "RevolutionUC";
+$username = "root";
+$password = "nix4*4KcYK*8qqP";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-/* Attempt to connect to MySQL database */
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+mysqli_close($conn);
+?>
