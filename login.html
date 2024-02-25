@@ -12,7 +12,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       background: linear-gradient(to bottom, #7ed56f, #28b485);
     }
 
@@ -23,6 +23,7 @@
       background-color: rgba(255, 255, 255, 0.8);
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
+      margin-bottom: 20px; /* Added to create space between containers */
     }
 
     h2 {
@@ -102,12 +103,20 @@
       background-color: black;
       color: #fff;
     }
+
+    /* Added styles */
+    .guest-button-container {
+      text-align: center;
+      margin-top: 20px;
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+    }
   </style>
 </head>
 <body>
   <div class="login-container" id="login-container">
     <h2>Best Dressed</h2>
-    <button onclick="continueAsGuest()">Continue as Guest</button>
     <div id="signin-form">
       <form id="login-form">
         <div class="form-group">
@@ -122,8 +131,16 @@
       </form>
       <p id="error-message" class="error-message"></p>
     </div>
+    <div class="social-buttons">
+      <button class="social-button facebook-button" onclick="loginWithFacebook()">Login with Facebook</button>
+      <button class="social-button google-button" onclick="loginWithGoogle()">Login with Google</button>
+      <button class="social-button X-button" onclick="loginWithX()">Login with X</button>
+    </div>
     <div class="toggle-form">
       Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a>
+    </div>
+    <div class="toggle-form">
+      <button onclick="continueAsGuest()">Continue as Guest</button>
     </div>
   </div>
 
@@ -156,59 +173,4 @@
         signupContainer.style.display = 'none';
       } else {
         loginContainer.style.display = 'none';
-        signupContainer.style.display = 'block';
-      }
-    }
-
-    function continueAsGuest() {
-      // Implement logic for continuing as a guest here
-      console.log('Continuing as Guest...');
-      window.location.href = 'guest_home.html'; // Redirect to guest home page
-    }
-
-    function loginWithFacebook() {
-      // Implement Facebook login logic here
-      console.log('Logging in with Facebook...');
-    }
-
-    function loginWithGoogle() {
-      // Implement Google login logic here
-      console.log('Logging in with Google...');
-    }
-
-    function loginWithTwitter() {
-      // Implement Twitter login logic here
-      console.log('Logging in with X...');
-    }
-
-    document.getElementById('login-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission
-      
-      // Get the username and password values
-      var username = document.getElementById('username').value;
-      var password = document.getElementById('password').value;
-
-      // Basic validation
-      if (username === 'admin' && password === 'password') {
-        // Successful login
-        window.location.href = 'dashboard.html'; // Redirect to dashboard page
-      } else {
-        // Failed login
-        document.getElementById('error-message').innerText = 'Invalid username or password';
-      }
-    });
-
-    document.getElementById('create-account-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission
-      
-      // Get the new username and password values
-      var newUsername = document.getElementById('new-username').value;
-      var newPassword = document.getElementById('new-password').value;
-
-      // Here you can implement logic to create a new account
-      // For simplicity, let's just display a message
-      document.getElementById('create-account-message').innerText = 'Account created successfully!';
-    });
-  </script>
-</body>
-</html>
+        signup
