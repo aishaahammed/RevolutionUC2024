@@ -368,29 +368,5 @@ button:hover {
    /* float:right;*/
    float:right;
   }
-<<<<<<< HEAD
-=======
 
-  .banner-area{
-    width: 100%;
-    height: 500px;
-    position:absolute;
-    top: 51px;
-    background-image: url('banner.jpg');
-    background-size: cover;
-    object-fit: cover;
-    background-position: 50% 50%;
-  }
-  .content-area{
-    width:100vw;
-    position: relative;
-    top:450px;
-    background: add;
-    height: 400px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: 50% 50%;
-    height: auto;
-  }
-
->>>>>>> dcdacfe95b0e82b8f69beea3659683d17c7c7d10
+ 
