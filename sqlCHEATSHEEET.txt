@@ -1,0 +1,23 @@
+----MYSQL commands---
+
+
+--Follow this for setting up mySQL
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
+
+---To create a database first
+1. Login into mysql in the command line
+mysql -u root -p
+
+2. Then use:
+CREATE DATABASE {Name of database};
+
+
+------TO SELECT YOUR DATABASE-----
+mysql -u {username} -p {name of database}
+
+---TO create a login system--It uses PHP and mysql
+https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php
+
+
+--Various stuff
+https://www.tutorialrepublic.com/sql-tutorial/sql-create-table-statement.php
