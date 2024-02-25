@@ -9,7 +9,8 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #7ed56f, #28b485); /* Gradient background from light green to dark green */
+            background-image: url('waste_is_out_of_fashion_shutterstock.jpg');
+            color: #ffffff; /* White text */
             color: #ffffff; /* White text */
             text-align: center;
         }
@@ -24,30 +25,35 @@
             font-size: 2.5rem;
             margin-bottom: 20px;
             color: #ffffff; /* White text */
+            text-shadow: 4px 4px 4px black;
         }
         p {
             font-size: 1.2rem;
             margin-bottom: 40px;
-            color: #ffffff; /* White text */
+            color: rgb(101); /* White text */
+            text-shadow: 2px 2px 2px black;
         }
         .cta-button {
-            background-color: #ff6f61; /* Salmon button color */
-            color: #ffffff; /* White text */
-            padding: 15px 30px;
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+            width: 20;
+            height: 20;
+            padding: 10px 20px;
+            border-style: solid;
+            border-width:2px 2px;
+            border-color: white; 
+            background-color: rgb(0 0 0 / 5%);
+            color: white; /* White text */
             font-size: 1.2rem;
-            border: none;
-            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #ff4d3f; /* Darker shade of salmon on hover */
+            backdrop-filter: blur(20px);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to our Fashion Application</h1>
+        <h1>Best Dressed</h1>
         <p>Discover the latest trends and styles.</p>
         <a href="appFrontPage.html" class="cta-button">Enter the Fashion World</a>
     </div>

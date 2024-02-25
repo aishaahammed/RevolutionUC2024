@@ -7,7 +7,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #7ed56f, #28b485); /* Gradient background from light green to dark green */
+            background-image: url('waste_is_out_of_fashion_shutterstock.jpg');
             color: #ffffff; /* White text */
             text-align: center;
         }
@@ -37,32 +37,25 @@
             position: relative;
             display: inline-block;
             margin: 10px;
-            width: 0;
-            height: 0;
+            width: 20;
+            height: 20;
             padding: 10px 20px;
             border-style: solid;
-            border-width: 0 25px 43.3px 25px;
-            border-color: transparent transparent #ff6f61 transparent; /* Salmon triangle color */
-            background-color: transparent;
-            color: #ffffff; /* White text */
+            border-width:2px 2px;
+            border-color: white; 
+            background-color: rgb(0 0 0 / 5%);
+            color: white; /* White text */
             font-size: 1.2rem;
             cursor: pointer;
-            transition: transform 0.3s ease;
+            backdrop-filter: blur(20px);
         }
-        .button:hover {
-            transform: translateY(-3px);
-        }
-        button:hover {
-          opacity: 0.8;
-          background-color: #ff4d3f;
-        }
+        
         </style>
     </head>
 <body>
 
-<h2>Model Login Form</h2>
     <div class="containerPage">
-        <h1>Welcome to Our Fashion App</h1>
+        <h1>Best Dressed</h1>
         <button class="button" onclick="location.href='signUp.php'" style="width:30%;">Sign Up</button>
         <button class="button" onclick="location.href='login.html'" style="width:30%;">Sign in</button>
         <button class="button" onclick="location.href='GuestPage.html'" style="width:30%;">Guest</button>
